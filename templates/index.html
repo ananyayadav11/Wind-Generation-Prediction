@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wind Energy Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Wind Energy Generation Prediction</h1>
+        <p class="note">Select a date range to predict energy generation.</p>
+
+        <form method="POST" action="/">
+    <div class="form-row">
+        <div class="input-box">
+            <label>From Date</label>
+            <input type="date" name="fd" min="2018-01-01" max="2020-03-31" required>
+        </div>
+        <div class="input-box">
+            <label>To Date</label>
+            <input type="date" name="td" min="2018-01-01" max="2020-03-31" required>
+        </div>
+    </div>
+    <button type="submit">Generate Prediction</button>
+</form>
+
+
+        {% if show_chart %}
+        <div class="chart-section">
+            <h2>Prediction Results</h2>
+            <img src="{{ url_for('static', filename='output.png') }}?v={{ range(1,999999)|random }}" alt="Prediction Chart" class="chart-img">
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
+
