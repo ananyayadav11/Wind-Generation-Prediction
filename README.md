@@ -17,7 +17,7 @@ A **full-stack web application** that predicts wind energy generation for a turb
 - **Version Control:** Git & GitHub
 
 ## Project Structure
-
+````
 wind_turbine/
 ├── app.py
 ├── model.py
@@ -28,6 +28,7 @@ wind_turbine/
 └── templates/
     └── index.html
 
+```
 
 ## Usage
 - Run the Flask server and open the browser.
