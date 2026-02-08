@@ -18,16 +18,16 @@ A **full-stack web application** that predicts wind energy generation for a turb
 
 ## Project Structure
 
-wind-turbine/
-│
-├── app.py # Flask backend
-├── model.py # Feature creation and model loading
-├── model2.pkl # Pre-trained XGBoost model
-├── static/ # CSS and chart output
-│ ├── style.css
-│ └── output.png
-└── templates/ # HTML templates
-└── index.html
+wind_turbine/
+├── app.py
+├── model.py
+├── model2.pkl
+├── static/
+│   ├── style.css
+│   └── output.png
+└── templates/
+    └── index.html
+
 
 ## Usage
 - Run the Flask server and open the browser.
