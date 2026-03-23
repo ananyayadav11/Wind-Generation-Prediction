@@ -2,6 +2,8 @@
 
 ## Overview
 A **full-stack web application** that predicts wind energy generation for a turbine using historical data (Jan 2018 – Mar 2020). Users can select a date range and view predictions as interactive charts. The application also allows analyzing past energy trends.
+<img width="1908" height="1059" alt="Screenshot 2026-02-08 143721" src="https://github.com/user-attachments/assets/5b961165-b7f4-4704-bd17-3be78e7a2ad2" />
+
 
 ## Features
 - **Interactive Date Selection:** Pick any date range within dataset limits using a calendar picker.
